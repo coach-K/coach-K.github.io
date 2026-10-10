@@ -677,6 +677,42 @@ h3 {
   text-decoration: underline;
 }
 
+.open-source {
+  margin-top: 1.75rem;
+  padding: 1rem 1.15rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.open-source h3 {
+  font-size: 1.05rem;
+}
+
+.open-source p {
+  margin-top: 0.4rem;
+  color: var(--muted);
+}
+
+.open-source ul {
+  margin-top: 0.55rem;
+  padding-left: 1.15rem;
+}
+
+.open-source li {
+  list-style: disc;
+}
+
+.open-source li + li {
+  margin-top: 0.25rem;
+}
+
+.open-source a {
+  color: var(--cyan);
+  font-weight: 700;
+  text-underline-offset: 0.18em;
+}
+
 .earlier {
   margin-top: 2rem;
   border-top: 1px solid var(--line);
@@ -935,6 +971,7 @@ summary {
   .skill-card,
   .project-card,
   .writing-card,
+  .open-source,
   .contact-card {
     background: #fff;
     border-color: #ccc;

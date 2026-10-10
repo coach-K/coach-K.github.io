@@ -16,4 +16,12 @@ Publish from the default branch at `/` (root). `.nojekyll` is included so Pages 
 
 The CV download is [assets/Kehinde-Ogunde-CV.pdf](assets/Kehinde-Ogunde-CV.pdf).
 
-Keztrip links to [keztrip.com](https://keztrip.com/), plus the Google Play and App Store listings that the site itself points to. Teamforce links to the TeamForce products page, and the WhatsApp and Telegram solutions link to the communication page on [teamforcetechnologies.com](https://teamforcetechnologies.com/). Incentive Games cards have no outbound links; public pages for those CV names were not verified. Andela cards in Earlier projects link to the matching repositories under [github.com/coach-K](https://github.com/coach-K). Homie has no verified store URL; see the TODO comments in `index.html`. The Writing section links the verified Medium article only.
+Keztrip links to [keztrip.com](https://keztrip.com/). Teamforce, WhatsApp, and Telegram link to [teamforcetechnologies.com](https://teamforcetechnologies.com/). Homie links to [homie.com](https://homie.com). Andela cards link to repositories under [github.com/coach-K](https://github.com/coach-K). Open source links the merged `andela/helpmebuy` pull requests. The CV source is [cv/kehinde-ogunde-cv.html](cv/kehinde-ogunde-cv.html); print it to `assets/Kehinde-Ogunde-CV.pdf` with headless Chrome. The Writing section links the verified Medium article only.
+
+Regenerate the CV:
+
+```bash
+google-chrome --headless --disable-gpu --no-sandbox --no-pdf-header-footer \
+  --print-to-pdf=assets/Kehinde-Ogunde-CV.pdf \
+  file://$PWD/cv/kehinde-ogunde-cv.html
+```
