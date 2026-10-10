@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kehinde Ogunde — CV</title>
+    <style>
+      @font-face {
+        font-family: "Montserrat";
+        src: url("../assets/fonts/montserrat-latin-400.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Montserrat";
+        src: url("../assets/fonts/montserrat-latin-500.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Montserrat";
+        src: url("../assets/fonts/montserrat-latin-600.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Montserrat";
+        src: url("../assets/fonts/montserrat-latin-700.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      @page {
+        size: A4;
+        margin: 13mm 0 12mm;
+      }
+
+      @page :first {
+        margin-top: 0;
+      }
+
+      * { box-sizing: border-box; }
+
+      html {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      body {
+        margin: 0;
+        color: #162433;
+        background: #fff;
+        font-family: "Montserrat", "Liberation Sans", Arial, sans-serif;
+        font-size: 9.7pt;
+        line-height: 1.46;
+        font-weight: 400;
+        hyphens: manual;
+      }
+
+      h1, h2, h3, p, ul { margin: 0; padding: 0; }
+
+      a { color: #0b7490; text-decoration: none; }
+
+      header {
+        margin: 0 0 1mm;
+        padding: 12mm 16mm 8mm;
+        background: #07111c;
+        color: #f4f8fc;
+      }
+
+      h1 {
+        font-size: 26pt;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -0.02em;
+      }
+
+      .headline {
+        margin-top: 5px;
+        max-width: 172mm;
+        color: #5cefff;
+        font-size: 10.4pt;
+        font-weight: 600;
+        line-height: 1.3;
+      }
+
+      .lede {
+        margin-top: 5px;
+        max-width: 176mm;
+        color: #c5d4e4;
+        font-size: 8.7pt;
+        line-height: 1.35;
+      }
+
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 13px;
+        margin-top: 8px;
+        padding-top: 7px;
+        border-top: 1.5px solid #5cefff;
+        list-style: none;
+        color: #e8f1f8;
+        font-size: 8.5pt;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+
+      .contact a { color: #e8f1f8; }
+
+      .contact li {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .icon {
+        width: 10px;
+        height: 10px;
+        flex: 0 0 auto;
+        color: #5cefff;
+      }
+
+      main { padding: 1mm 16mm 0; }
+
+      h2 {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin: 11px 0 6px;
+        padding-bottom: 3px;
+        border-bottom: 2px solid #1ec8dc;
+        color: #08748c;
+        font-size: 11pt;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      h2::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        flex: 0 0 auto;
+        background: #1ec8dc;
+      }
+
+      section:first-child h2 { margin-top: 2px; }
+
+      article { margin: 0 0 16px; }
+
+      .role {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        column-gap: 10px;
+        align-items: baseline;
+      }
+
+      h3 {
+        color: #07111c;
+        font-size: 10.6pt;
+        font-weight: 700;
+        line-height: 1.25;
+      }
+
+      .when {
+        color: #08748c;
+        font-size: 9pt;
+        font-weight: 700;
+        line-height: 1.25;
+        white-space: nowrap;
+      }
+
+      ul.bullets {
+        margin-top: 1px;
+        padding-left: 1.05em;
+      }
+
+      ul.bullets li { margin: 0 0 1px; }
+
+      ul.bullets li::marker { color: #0e8ea4; }
+
+      .project {
+        margin: 0 0 5px;
+        padding: 0 0 0 7px;
+        border-left: 2px solid #1ec8dc;
+      }
+
+      .project p { margin-top: 1px; }
+
+      .project a,
+      .recognition a {
+        color: #08748c;
+        font-weight: 600;
+        white-space: nowrap;
+        text-decoration: underline;
+        text-underline-offset: 1.5px;
+      }
+
+      .continue {
+        break-before: page;
+        page-break-before: always;
+        padding-top: 2mm;
+        font-size: 10.1pt;
+        line-height: 1.48;
+      }
+
+      .continue h2 { margin: 7mm 0 3.5mm; }
+      .continue article { margin-bottom: 7mm; }
+      .continue .skill-line { margin-bottom: 3.4mm; }
+      .continue .pill { padding: 2px 8px 2.5px; }
+      .continue .recognition li { margin-bottom: 2.6mm; }
+
+      .skill-line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 3px 5px;
+        margin: 0 0 3.5px;
+      }
+
+      .skill-line strong {
+        flex: 0 0 84px;
+        color: #07111c;
+        font-size: 9pt;
+        font-weight: 700;
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 1px 7px 1.5px;
+        border: 1px solid #b7e7f2;
+        border-radius: 999px;
+        background: #f3fbfd;
+        color: #163044;
+        font-size: 8.5pt;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+
+      .recognition { padding-left: 1.05em; }
+      .recognition li { margin: 0 0 2px; }
+      .recognition li::marker { color: #0e8ea4; }
+
+      article,
+      .skill-line,
+      .recognition li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Kehinde Ogunde</h1>
+      <p class="headline">Senior Software Engineer: Backend &amp; Full-stack (TypeScript, Node.js/NestJS, React, Java/Kotlin)</p>
+      <p class="lede">Also builds mobile apps: Android (Kotlin, Java) and iOS (Swift). Full overlap with UK/EU hours, async-first, with backup power and internet.</p>
+      <ul class="contact">
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <span>Abuja, Nigeria (UTC+1)</span>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M7 3h3l1.5 4-2 1.5a12 12 0 0 0 6 6L17 13l4 1.5V18a2 2 0 0 1-2 2A15 15 0 0 1 4 5a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+2347061169166">+234 706 116 9166</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="m4 7 8 6 8-6"/></svg>
+          <a href="mailto:kehindeogundecur26@gmail.com">kehindeogundecur26@gmail.com</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.84a9.3 9.3 0 0 1 2.5.34c1.9-1.32 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.59.69.49A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+          <a href="https://github.com/coach-K">github.com/coach-K</a>
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M3 12h18M12 3c2.4 2.6 3.6 5.7 3.6 9S14.4 18.4 12 21c-2.4-2.6-3.6-5.7-3.6-9S9.6 5.6 12 3z"/></svg>
+          <a href="https://kehindeogunde.com">kehindeogunde.com</a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <section>
+        <h2>Experience</h2>
+        <article>
+          <div class="role">
+            <h3>Senior Software Engineer, MBL HighTech</h3>
+            <p class="when">2024 – Present</p>
+          </div>
+          <ul class="bullets">
+            <li>Collaborated on the backend and frontend of Teamforce (CRM, Clientzone, PWA, and Affiliate) with React, NestJS, TypeScript, JavaScript, Node.js, Express, and Postgres. Teamforce’s CRM is the brokerage’s central console, integrating liquidity providers, VoIP, e-KYC, the trading platform, and payments, with a client area and IB and affiliate management.</li>
+            <li>Collaborated on the WhatsApp Solution and the Telegram Solution on that same stack, tracked with Git and Asana. Those channels let agents message clients from the CRM, and the messages are archived on the client record.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="role">
+            <h3>Program Manager &amp; Leader (Volunteer), The Salvation Army Division, San Diego, USA</h3>
+            <p class="when">2023</p>
+          </div>
+          <ul class="bullets">
+            <li>Led faith teaching and camping for kids aged 7–16, running campfires, archery, swimming, axe-throwing, and musical performances, which built teamwork, creativity, and leadership.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="role">
+            <h3>Senior Software Engineer, Incentive Games</h3>
+            <p class="when">2021 – 2023</p>
+          </div>
+          <ul class="bullets">
+            <li>Contributed backend and frontend for Sportsbook and for Flight-Man, a real-time multiplayer web game, with React, JavaScript, Java, MySQL, and RabbitMQ on Linux, working with cross-functional teams to deliver those products.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="role">
+            <h3>Lead Software Engineer, Homie</h3>
+            <p class="when">2016 – 2020</p>
+          </div>
+          <ul class="bullets">
+            <li>Pioneered the Homie app and built its user interfaces, advanced search, and interactive maps. Homie is a licensed real estate brokerage serving Utah and Arizona: buyers browse homes for sale, schedule tours, and make offers, and sellers can list with a flat fee. Homie states that this saves sellers thousands per transaction compared with a 3% listing commission.</li>
+            <li>The work was recognized by SiliconSlopes, and the app won a hackathon.</li>
+          </ul>
+        </article>
+        <article>
+          <div class="role">
+            <h3>Software Engineer, Andela</h3>
+            <p class="when">2015 – 2020</p>
+          </div>
+          <ul class="bullets">
+            <li>Built iReaction, a public Java library for document management; Voluminotes, an Android note-taking app; and iWorkout in Kotlin and Java, which plans, reminds, and counts daily pushups and shows a monitoring report.</li>
+            <li>Listed on DZone and Stackify as a top Java leader, placed in the top 0.1% of software engineers at Andela, won hackathons, and was featured in Java Edition.</li>
+          </ul>
+        </article>
+      </section>
+
+      <div class="continue">
+      <section>
+        <h2>Projects</h2>
+        <article class="project">
+          <h3>Keztrip — bus booking app, Abuja</h3>
+          <p>Built the NestJS and PostgreSQL backend and the React and TypeScript admin dashboard. Keztrip lets riders reserve a seat on a scheduled route, pay, and follow the bus on the map, including school runs, event trips, and private bus hire. <a href="https://keztrip.com/">keztrip.com</a></p>
+        </article>
+        <article class="project">
+          <h3>Teamforce, WhatsApp Solution, and Telegram Solution — MBL HighTech</h3>
+          <p>Backend and frontend for the brokerage CRM, Clientzone, PWA, and Affiliate, plus WhatsApp and Telegram messaging archived on the client record. <a href="https://teamforcetechnologies.com/products/">teamforcetechnologies.com</a></p>
+        </article>
+        <article class="project">
+          <h3>Homie — real estate brokerage</h3>
+          <p>User interfaces, advanced search, and interactive maps. Homie serves Utah and Arizona, with home search, tours, offers, and flat-fee listings. <a href="https://homie.com">homie.com</a></p>
+        </article>
+        <article class="project">
+          <h3>Earlier: iReaction, Voluminotes, iWorkout</h3>
+          <p>Public repositories: <a href="https://github.com/coach-K/iReaction">github.com/coach-K/iReaction</a>, <a href="https://github.com/coach-K/Voluminotes-App">github.com/coach-K/Voluminotes-App</a>, and <a href="https://github.com/coach-K/iWorkout">github.com/coach-K/iWorkout</a>.</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <p class="skill-line"><strong>Languages</strong> <span class="pill">Java</span> <span class="pill">Kotlin</span> <span class="pill">Swift</span> <span class="pill">JavaScript</span> <span class="pill">TypeScript</span></p>
+        <p class="skill-line"><strong>Frameworks</strong> <span class="pill">Spring Boot</span> <span class="pill">React</span> <span class="pill">NestJS</span> <span class="pill">Node.js</span> <span class="pill">Express</span> <span class="pill">GraphQL</span></p>
+        <p class="skill-line"><strong>Mobile</strong> <span class="pill">Android (Java, Kotlin)</span> <span class="pill">iOS (Swift)</span></p>
+        <p class="skill-line"><strong>Web</strong> <span class="pill">React</span> <span class="pill">Vite</span></p>
+        <p class="skill-line"><strong>Databases</strong> <span class="pill">MySQL</span> <span class="pill">Postgres</span> <span class="pill">MongoDB</span> <span class="pill">Redis</span> <span class="pill">RabbitMQ</span></p>
+        <p class="skill-line"><strong>Tools</strong> <span class="pill">Git</span> <span class="pill">Jira</span> <span class="pill">Asana</span> <span class="pill">AWS</span></p>
+        <p class="skill-line"><strong>AI tools</strong> <span class="pill">Cursor</span> <span class="pill">Claude</span> <span class="pill">ChatGPT</span> <span class="pill">Gemini</span> <span class="pill">Grok</span></p>
+      </section>
+
+      <section>
+        <h2>Recognition</h2>
+        <ul class="recognition">
+          <li>Listed on DZone.com and Stackify.com as a top Java leader. Featured in Java Edition and in Evolution of Java Edition.</li>
+          <li>Open source: merged pull requests on <a href="https://github.com/andela/helpmebuy">github.com/andela/helpmebuy</a> (navigation icon fix, user profile management, and a hotfix).</li>
+        </ul>
+      </section>
+      </div>
+    </main>
+  </body>
+</html>
