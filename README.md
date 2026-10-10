@@ -16,4 +16,4 @@ Publish from the default branch at `/` (root). `.nojekyll` is included so Pages 
 
 The CV download is [assets/Kehinde-Ogunde-CV.pdf](assets/Kehinde-Ogunde-CV.pdf).
 
-Recent project cards (MBL HighTech, then Incentive Games) have no outbound links; public pages for those CV names were not verified. Andela cards in Earlier projects link to the matching repositories under [github.com/coach-K](https://github.com/coach-K). Homie has no verified store URL; see the TODO comments in `index.html`. The Writing section links the verified Medium article only.
+Keztrip links to [keztrip.com](https://keztrip.com/). Its role and stack are still a TODO in `index.html`. MBL HighTech and Incentive Games cards have no outbound links; public pages for those CV names were not verified. Andela cards in Earlier projects link to the matching repositories under [github.com/coach-K](https://github.com/coach-K). Homie has no verified store URL; see the TODO comments in `index.html`. The Writing section links the verified Medium article only.
