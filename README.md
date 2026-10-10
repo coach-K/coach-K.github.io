@@ -16,4 +16,4 @@ Publish from the default branch at `/` (root). `.nojekyll` is included so Pages 
 
 The CV download is [assets/Kehinde-Ogunde-CV.pdf](assets/Kehinde-Ogunde-CV.pdf).
 
-Project cards do not link out. Public URLs are not on the CV; see the TODO comments in `index.html`.
+Andela project cards link to the matching public repositories under [github.com/coach-K](https://github.com/coach-K). Homie has no verified store URL; see the TODO comment in `index.html`. The Writing section links the verified Medium article only.
