@@ -651,6 +651,14 @@ h3 {
   margin-top: 0.55rem;
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
 .project-cta {
   margin-top: auto;
   padding-top: 1rem;
@@ -658,6 +666,11 @@ h3 {
   font-weight: 700;
   text-decoration: none;
   text-underline-offset: 0.2em;
+}
+
+.project-links .project-cta {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .project-cta:hover {
